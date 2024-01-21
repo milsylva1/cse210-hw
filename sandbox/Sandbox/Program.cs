@@ -6,13 +6,13 @@ class Program
     static void Main(string[] args)
     {
         Person p1 = new Person();
-        p1._firstName = "Mils";
-        p1._lastName = "Wise";
+        p1._firstName = "";
+        p1._lastName = "---";
         p1._age = 25;
 
         Person p2 = new Person();
-        p2._firstName = "Sylvain";
-        p2._lastName = "Sylva";
+        p2._firstName = "---";
+        p2._lastName = "";
         p2._age = 30;
         
        
@@ -27,7 +27,7 @@ class Program
 
         Console.WriteLine("What is one Incredible thing you did today? ");
         string today = Console.ReadLine();
-        Console.WriteLine($"Your day was awesome--{today}");
+        Console.WriteLine($"Your day was--awesome--{today}");
 
         DateTime currentDateTime = DateTime.Now;
         string formattedDateTime = currentDateTime.
