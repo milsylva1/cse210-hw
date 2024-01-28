@@ -6,14 +6,20 @@ class Program
     static void Main(string[] args)
     {
         Person p1 = new Person();
-        p1._firstName = "";
-        p1._lastName = "---";
-        p1._age = 25;
+        p1._firstprompt ="Who was the most interesting person I interacted with today?";
+        p1._2ndprompt = "What was the best part of my day?";
+        p1._3rdprompt = "How did I see the hand of the Lord in my life today?";
+        p1._4thprompt = "What was the strongest emotion I felt today?";
+        p1._5thprompt = "If I had one thing I could do over today, what would it be?";
+        p1._line = 25;
 
         Person p2 = new Person();
-        p2._firstName = "---";
-        p2._lastName = "";
-        p2._age = 30;
+       p2._firstprompt = "Who was the most interesting person I interacted with today?";
+        p2._2ndprompt = "What was the best part of my day?";
+        p2._3rdprompt = "How did I see the hand of the Lord in my life today?";
+        p2._4thprompt = "What was the strongest emotion I felt today?";
+        p2._5thprompt = "If I had one thing I could do over today, what would it be?";
+        p2._line = 30;
         
        
         List<Person> people = new List<Person>();
@@ -22,7 +28,7 @@ class Program
 
         foreach(Person p in people)
         {
-            Console.WriteLine(p._firstName);
+            Console.WriteLine(p._firstprompt);
         }
 
         Console.WriteLine("What is one Incredible thing you did today? ");
@@ -48,7 +54,7 @@ class Program
         {
             foreach(Person p in people)
         {
-            outputFile.WriteLine(p._firstName);
+            outputFile.WriteLine(p._firstprompt);
         }
         }
     }
