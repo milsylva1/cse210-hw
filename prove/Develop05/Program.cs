@@ -4,6 +4,14 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello Develop05 World!");
+        GoalManager goalManager = new GoalManager();
+        goalManager.Start();
+        goalManager.DisplayPlayerInfo();
+        goalManager.ListGoalNames();
+        goalManager.ListGoalDetails();
+        goalManager.CreateGoal();
+        goalManager.RecordEvent();
+        goalManager.SaveGoals();
+        goalManager.LoadGoals();
     }
 }
