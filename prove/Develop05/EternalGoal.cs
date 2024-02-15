@@ -14,7 +14,7 @@ public class EternalGoal : Goal
 
     public override bool IsComplete()
     {
-        // Implementation of IsComplete method
+        
         return false;
     }
 

@@ -22,13 +22,13 @@ public class SimpleGoal : Goal
 
     public override string GetDetailsString()
     {
-        // Implementation of GetDetailsString method
+        
         return "Details of SimpleGoal";
     }
 
     public override string GetStringRepresentation()
     {
-        // Implementation of GetStringRepresentation method
+        
         return "String representation of SimpleGoal";
     }
 }
